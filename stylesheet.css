@@ -216,3 +216,77 @@ footer {
   font-size: 14px;
 }
 
+/* 「タブレット・スマホ用」画面幅が768px以下の場合 */
+@media (max-width: 768px) {
+  .container {
+    width: 100%; /* コンテンツ幅を画面に合わせる */
+    padding: 0 10px; /* 余白を調整 */
+  }
+
+  header {
+    height: auto; /* ヘッダーの高さを自動調整 */
+    text-align: center; /* 中央揃え */
+  }
+
+  .header-left, .header-right {
+    float: none; /* フロート解除 */
+    display: block;
+    text-align: center;
+  }
+
+  .logo {
+    width: 80%; /* ロゴのサイズを小さくする */
+    height: auto;
+  }
+
+  .top-wrapper h1 {
+    font-size: 28px; /* 見出しのサイズを小さく */
+  }
+
+  .top-wrapper p {
+    font-size: 14px; /* 段落のサイズを調整 */
+  }
+
+  .lesson {
+    width: 100%; /* レッスン要素を画面幅いっぱいに */
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    width: 100%; /* ボタンを画面幅に合わせる */
+    margin-bottom: 10px;
+  }
+
+  form input, form textarea, form button {
+    width: 100%; /* 入力欄を画面幅に合わせる */
+  }
+
+  .cta {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+
+/* 画面幅が480px以下の場合（小さなスマホ用） */
+@media (max-width: 480px) {
+  .top-wrapper h1 {
+    font-size: 22px; /* 見出しをさらに小さく */
+  }
+
+  .btn {
+    font-size: 14px; /* ボタンの文字サイズを調整 */
+    padding: 6px 12px;
+  }
+
+  .lesson-icon img {
+    max-width: 80px; /* 画像サイズを小さく */
+  }
+
+  .lesson-icon p {
+    font-size: 14px; /* アイコン内テキストを調整 */
+  }
+
+  footer {
+    font-size: 12px; /* フッター文字サイズを小さく */
+  }
+}
